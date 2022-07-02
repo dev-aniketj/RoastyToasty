@@ -14,6 +14,6 @@ allprojects {
 > Step 2. Add the dependency
 ```gradle
 dependencies {
-	        implementation 'com.github.aniketjain8441:RoastyToasty:Tag'
+	        implementation 'com.github.aniketjain8441:RoastyToasty:1.0.1'
 	}
 ```
