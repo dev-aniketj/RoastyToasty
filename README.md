@@ -173,6 +173,9 @@ Toasty.custom(context, "Custom Toast", Gravity.CENTER, Toast.LENGTH_SHORT, R.dra
 ## Contributing
 
 Please fork this repository and contribute back. Any contributions, large or small, major or minor features, bug fixes, are welcomed and appreciated but will be thoroughly reviewed.
+#### Thank you.
+
+
 ## Authors
 
 - [@aniketjain8441](https://github.com/aniketjain8441/)
