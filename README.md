@@ -24,3 +24,25 @@ dependencies {
 	        implementation 'com.github.aniketjain8441:RoastyToasty:1.0.1'
 	}
 ```
+
+## Usage
+
+To display an normal Toast:
+```
+Toasty.normal(context, "Normal Toast");
+```
+
+To display an success Toast:
+```
+Toasty.success(context, "Success Toast");
+```
+
+To display an error Toast:
+```
+Toasty.success(context, "Error Toast");
+```
+
+To display an warning Toast:
+```
+Toasty.success(context, "Warning Toast");
+```
