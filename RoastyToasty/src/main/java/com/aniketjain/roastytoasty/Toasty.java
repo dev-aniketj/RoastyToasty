@@ -20,19 +20,19 @@ public class Toasty extends ToastyColors {
     private static TextView toastyTextView;
 
     public static void normal(Context context, String message) {
-        custom(context, message);
+        custom(context, message, 17);
     }
 
     public static void success(Context context, String message) {
-        custom(context, message, R.drawable.ic_baseline_done_24, ToastyColors.SUCCESS_COLOR, 18, TEXT_COLOR);
+        custom(context, message, R.drawable.ic_baseline_done_24, ToastyColors.SUCCESS_COLOR, 17, TEXT_COLOR);
     }
 
     public static void error(Context context, String message) {
-        custom(context, message, R.drawable.ic_baseline_error_outline_24, ToastyColors.ERROR_COLOR, 18, TEXT_COLOR);
+        custom(context, message, R.drawable.ic_baseline_error_outline_24, ToastyColors.ERROR_COLOR, 17, TEXT_COLOR);
     }
 
     public static void warning(Context context, String message) {
-        custom(context, message, R.drawable.ic_baseline_warning_24, ToastyColors.WARNING_COLOR, 18, TEXT_COLOR);
+        custom(context, message, R.drawable.ic_baseline_warning_24, ToastyColors.WARNING_COLOR, 17, TEXT_COLOR);
     }
 
     private static void createToast(Context context) {
@@ -57,7 +57,7 @@ public class Toasty extends ToastyColors {
         toastyTextView.setText(message);
     }
 
-    //    DEFAULT (GRAVITY, DURATION)
+    //    DEFAULT (GRAVITY, DURATION, TEXT SIZE AND TEXT COLOR))
     public static void custom(Context context, String message) {
         createToast(context);
         createView(context);
@@ -70,15 +70,16 @@ public class Toasty extends ToastyColors {
         toast.show();
     }
 
-    public static void custom(Context context, String message, int duration) {
+    public static void custom(Context context, String message, int textSize) {
         createToast(context);
         createView(context);
 
         toastyImageView.setVisibility(View.GONE);
         toastyTextView.setText(message);
+        toastyTextView.setTextSize(textSize);
 
         toast.setView(view);
-        toast.setDuration(duration);
+        toast.setDuration(Toast.LENGTH_SHORT);
         toast.show();
     }
 

@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toasty.warning(this, "Hello World, My name is aniket.");
+        Toasty.normal(this, "Hello World, My name is aniket.");
 //        DesignerToast.Success(this, "Hello World, my name is aniket jain.", Gravity.CENTER, 0);
     }
 }
