@@ -19,6 +19,10 @@ public class Toasty extends ToastyColors {
     private static ImageView toastyImageView;
     private static TextView toastyTextView;
 
+    public static void normal(Context context, String message) {
+        custom(context, message);
+    }
+
     public static void success(Context context, String message) {
         custom(context, message, R.drawable.ic_baseline_done_24, ToastyColors.SUCCESS_COLOR, 18, TEXT_COLOR);
     }
@@ -51,6 +55,44 @@ public class Toasty extends ToastyColors {
         toastyLinearLayout.setBackgroundColor(Color.parseColor(backgroundColor));
         toastyImageView.setBackgroundResource(drawable);
         toastyTextView.setText(message);
+    }
+
+    //    DEFAULT (GRAVITY, DURATION)
+    public static void custom(Context context, String message) {
+        createToast(context);
+        createView(context);
+
+        toastyImageView.setVisibility(View.GONE);
+        toastyTextView.setText(message);
+
+        toast.setView(view);
+        toast.setDuration(Toast.LENGTH_SHORT);  //default
+        toast.show();
+    }
+
+    public static void custom(Context context, String message, int duration) {
+        createToast(context);
+        createView(context);
+
+        toastyImageView.setVisibility(View.GONE);
+        toastyTextView.setText(message);
+
+        toast.setView(view);
+        toast.setDuration(duration);
+        toast.show();
+    }
+
+    public static void custom(Context context, String message, int gravity, int duration) {
+        createToast(context);
+        createView(context);
+
+        toastyImageView.setVisibility(View.GONE);
+        toastyTextView.setText(message);
+
+        toast.setView(view);
+        toast.setGravity(gravity, 0, 0);
+        toast.setDuration(duration);
+        toast.show();
     }
 
     //    NORMAL (GRAVITY, DURATION)
