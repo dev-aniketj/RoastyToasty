@@ -1,8 +1,12 @@
-# RoastyToasty
-Design Toast Library
 
-> Step 1. Add the JitPack repository to your build file
-```gradle
+# RoastyToasty
+
+
+## Prerequisites
+
+Add this in your root `build.gradle` file (not your module `build.gradle` file):
+
+```bash
 allprojects {
 		repositories {
 			...
@@ -10,10 +14,13 @@ allprojects {
 		}
 	}
 ```
-  
-> Step 2. Add the dependency
-```gradle
+
+## Dependency
+
+Add this to your module's `build.gradle` file (make sure the version matches the JitPack badge above):
+
+```bash
 dependencies {
-	        implementation 'com.github.aniketjain8441:RoastyToasty:Tag'
+	        implementation 'com.github.aniketjain8441:RoastyToasty:1.0.1'
 	}
 ```
