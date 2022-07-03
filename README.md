@@ -51,13 +51,49 @@ Toasty.success(context, "Warning Toast");
 
 To display the custom Toast:
 
-### `There is many ways to write a custom Toast`
+### There is many ways to write a custom Toast, use anyone of them to create a custom Toast.
 
-> #### Method 1:
+> #### Way 1:
 ```
-custom(Context context, String message)
+Toasty.custom(Context context, String message)
 ```
 > #### Example 1:
 ```
 Toasty.custom(context, "Custom Toast");
+```
+
+> #### Way 2:
+```
+Toasty.custom(Context context, String message, int textSize)
+```
+> #### Example 2:
+```
+Toasty.custom(context, "Custom Toast", 18);
+```
+
+> #### Way 3:
+```
+Toasty.custom(Context context, String message, int gravity, int duration)
+```
+> #### Example 3:
+```
+Toasty.custom(context, "Custom Toast", Gravity.CENTER, Toast.LENGTH_SHORT);
+```
+
+> #### Way 4:
+```
+Toasty.custom(Context context, String message, int drawable, String backgroundColor)
+```
+> #### Example 4:
+```
+Toasty.custom(context, "Custom Toast", R.drawable.icon, "#ff3300");
+```
+
+> #### Way 5:
+```
+Toasty.custom(Context context, String message, int duration, int drawable, String backgroundColor)
+```
+> #### Example 5:
+```
+Toasty.custom(context, "Custom Toast", Toast.LENGTH_SHORT, R.drawable.icon, "#ff3300");
 ```
