@@ -97,3 +97,79 @@ Toasty.custom(Context context, String message, int duration, int drawable, Strin
 ```
 Toasty.custom(context, "Custom Toast", Toast.LENGTH_SHORT, R.drawable.icon, "#ff3300");
 ```
+
+> #### Way 6:
+```
+Toasty.custom(Context context, String message, int gravity, int duration, int drawable, String backgroundColor)
+```
+> #### Example 6:
+```
+Toasty.custom(context, "Custom Toast", Gravity.CENTER, Toast.LENGTH_SHORT, R.drawable.icon, "#ff3300");
+```
+
+> #### Way 7:
+```
+Toasty.custom(Context context, String message, int drawable, String backgroundColor, int textSize, String textColor)
+```
+> #### Example 7:
+```
+Toasty.custom(context, "Custom Toast", R.drawable.icon, "#ff3300", 19, "#f9f9f9");
+```
+
+> #### Way 8:
+```
+Toasty.custom(Context context, String message, int duration, int drawable, String backgroundColor, int textSize, String textColor)
+```
+> #### Example 8:
+```
+Toasty.custom(context, "Custom Toast", Toast.LENGTH_SHORT, R.drawable.icon, "#ff3300", 19, "#f9f9f9");
+```
+
+> #### Way 9:
+```
+Toasty.custom(Context context, String message, int gravity, int duration, int drawable, String backgroundColor, int textSize, String textColor)
+```
+> #### Example 9:
+```
+Toasty.custom(context, "Custom Toast", Gravity.CENTER, Toast.LENGTH_SHORT, R.drawable.icon, "#ff3300", 19, "#f9f9f9");
+```
+
+> #### Way 10:
+```
+Toasty.custom(Context context, String message, int drawable, String backgroundColor, int toastyWidth, int toastyHeight)
+```
+> #### Example 10:
+```
+Toasty.custom(context, "Custom Toast", R.drawable.icon, "#ff3300", 200, 200);
+```
+
+> #### Way 11:
+```
+Toasty.custom(Context context, String message, int gravity, int duration, int drawable, String backgroundColor, int toastyWidth, int toastyHeight)
+```
+> #### Example 11:
+```
+Toasty.custom(context, "Custom Toast", Gravity.CENTER, Toast.LENGTH_SHORT, R.drawable.icon, "#ff3300", 200, 200);
+```
+
+> #### Way 12:
+```
+Toasty.custom(Context context, String message, int drawable, String backgroundColor, int textSize, String textColor, int toastyWidth, int toastyHeight)
+```
+> #### Example 12:
+```
+Toasty.custom(context, "Custom Toast", R.drawable.icon, "#ff3300", 19, "#f9f9f9", 200, 200);
+```
+
+> #### Way 13:
+```
+Toasty.custom(Context context, String message, int gravity, int duration, int drawable, String backgroundColor, int textSize, String textColor, int toastyWidth, int toastyHeight)
+```
+> #### Example 13:
+```
+Toasty.custom(context, "Custom Toast", Gravity.CENTER, Toast.LENGTH_SHORT, R.drawable.icon, "#ff3300", 19, "#f9f9f9", 200, 200);
+```
+## Authors
+
+- [@aniketjain8441](https://github.com/aniketjain8441/)
+
