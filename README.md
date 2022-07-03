@@ -46,3 +46,18 @@ To display an warning Toast:
 ```
 Toasty.success(context, "Warning Toast");
 ```
+
+## Custom Toast
+
+To display the custom Toast:
+
+### `There is many ways to write a custom Toast`
+
+> #### Method 1:
+```
+custom(Context context, String message)
+```
+> #### Example 1:
+```
+Toasty.custom(context, "Custom Toast");
+```
