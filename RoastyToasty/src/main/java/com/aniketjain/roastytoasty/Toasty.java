@@ -1,9 +1,11 @@
 package com.aniketjain.roastytoasty;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -19,6 +21,41 @@ public class Toasty extends ToastyColors {
     private static ImageView toastyImageView;
     private static TextView toastyTextView;
 
+    private static void createToast(Context context) {
+        toast = new Toast(context);
+    }
+
+    @SuppressLint("InflateParams")
+    private static void createView(Context context) {
+        view = LayoutInflater.from(context).inflate(R.layout.toasty_layout, null, false);
+        findViews(view);
+    }
+
+    private static void setUpWidthHeight(int toastyWidth, int toastyHeight) {
+        ViewGroup.LayoutParams params = toastyLinearLayout.getLayoutParams();
+        params.width = toastyWidth;
+        params.height = toastyHeight;
+        toastyLinearLayout.setLayoutParams(params);
+    }
+
+    private static void setUpTextView(int textSize, String textColor){
+        toastyTextView.setTextSize(textSize);
+        toastyTextView.setTextColor(Color.parseColor(textColor));
+    }
+
+    private static void findViews(View view) {
+        toastyCardView = view.findViewById(R.id.toasty_cardView);
+        toastyLinearLayout = view.findViewById(R.id.toasty_LinearLayout);
+        toastyImageView = view.findViewById(R.id.toasty_imageView);
+        toastyTextView = view.findViewById(R.id.toasty_textView);
+    }
+
+    private static void basicSetup(String message, int drawable, String backgroundColor) {
+        toastyLinearLayout.setBackgroundColor(Color.parseColor(backgroundColor));
+        toastyImageView.setBackgroundResource(drawable);
+        toastyTextView.setText(message);
+    }
+
     public static void normal(Context context, String message) {
         custom(context, message, 17);
     }
@@ -33,28 +70,6 @@ public class Toasty extends ToastyColors {
 
     public static void warning(Context context, String message) {
         custom(context, message, R.drawable.ic_baseline_warning_24, ToastyColors.WARNING_COLOR, 17, TEXT_COLOR);
-    }
-
-    private static void createToast(Context context) {
-        toast = new Toast(context);
-    }
-
-    private static void createView(Context context) {
-        view = LayoutInflater.from(context).inflate(R.layout.toasty_layout, null, false);
-        findViews(view);
-    }
-
-    private static void findViews(View view) {
-        toastyCardView = view.findViewById(R.id.toasty_cardView);
-        toastyLinearLayout = view.findViewById(R.id.toasty_LinearLayout);
-        toastyImageView = view.findViewById(R.id.toasty_imageView);
-        toastyTextView = view.findViewById(R.id.toasty_textView);
-    }
-
-    private static void basicSetup(String message, int drawable, String backgroundColor) {
-        toastyLinearLayout.setBackgroundColor(Color.parseColor(backgroundColor));
-        toastyImageView.setBackgroundResource(drawable);
-        toastyTextView.setText(message);
     }
 
     //    DEFAULT (GRAVITY, DURATION, TEXT SIZE AND TEXT COLOR))
@@ -139,8 +154,7 @@ public class Toasty extends ToastyColors {
         basicSetup(message, drawable, backgroundColor);
 
         //added
-        toastyTextView.setTextSize(textSize);
-        toastyTextView.setTextColor(Color.parseColor(textColor));
+        setUpTextView(textSize, textColor);
 
         toast.setView(view);
         toast.setDuration(Toast.LENGTH_SHORT);
@@ -154,8 +168,7 @@ public class Toasty extends ToastyColors {
         basicSetup(message, drawable, backgroundColor);
 
         //added
-        toastyTextView.setTextSize(textSize);
-        toastyTextView.setTextColor(Color.parseColor(textColor));
+        setUpTextView(textSize, textColor);
 
         toast.setView(view);
         toast.setDuration(duration);
@@ -169,8 +182,7 @@ public class Toasty extends ToastyColors {
         basicSetup(message, drawable, backgroundColor);
 
         //added
-        toastyTextView.setTextSize(textSize);
-        toastyTextView.setTextColor(Color.parseColor(textColor));
+        setUpTextView(textSize, textColor);
 
         toast.setView(view);
         toast.setGravity(gravity, 0, 0);
@@ -186,8 +198,7 @@ public class Toasty extends ToastyColors {
         basicSetup(message, drawable, backgroundColor);
 
         //added
-        toastyCardView.getLayoutParams().width = toastyWidth;
-        toastyCardView.getLayoutParams().height = toastyHeight;
+        setUpWidthHeight(toastyWidth, toastyHeight);
 
         toast.setView(view);
         toast.setDuration(Toast.LENGTH_SHORT);  //default
@@ -201,8 +212,7 @@ public class Toasty extends ToastyColors {
         basicSetup(message, drawable, backgroundColor);
 
         //added
-        toastyCardView.getLayoutParams().width = toastyWidth;
-        toastyCardView.getLayoutParams().height = toastyHeight;
+        setUpWidthHeight(toastyWidth, toastyHeight);
 
         toast.setView(view);
         toast.setGravity(gravity, 0, 0);
@@ -216,12 +226,10 @@ public class Toasty extends ToastyColors {
 
         basicSetup(message, drawable, backgroundColor);
 
-        toastyTextView.setTextSize(textSize);
-        toastyTextView.setTextColor(Color.parseColor(textColor));
+        setUpTextView(textSize, textColor);
 
         //added
-        toastyCardView.getLayoutParams().width = toastyWidth;
-        toastyCardView.getLayoutParams().height = toastyHeight;
+        setUpWidthHeight(toastyWidth, toastyHeight);
 
         toast.setView(view);
         toast.setDuration(Toast.LENGTH_SHORT);  //default
@@ -234,12 +242,10 @@ public class Toasty extends ToastyColors {
 
         basicSetup(message, drawable, backgroundColor);
 
-        toastyTextView.setTextSize(textSize);
-        toastyTextView.setTextColor(Color.parseColor(textColor));
+        setUpTextView(textSize, textColor);
 
         //added
-        toastyCardView.getLayoutParams().width = toastyWidth;
-        toastyCardView.getLayoutParams().height = toastyHeight;
+        setUpWidthHeight(toastyWidth, toastyHeight);
 
         toast.setView(view);
         toast.setGravity(gravity, 0, 0);

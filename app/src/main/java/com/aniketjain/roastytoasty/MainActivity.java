@@ -1,11 +1,8 @@
 package com.aniketjain.roastytoasty;
 
 import android.os.Bundle;
-import android.view.Gravity;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.vdx.designertoast.DesignerToast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toasty.normal(this, "Hello World, My name is aniket.");
-//        DesignerToast.Success(this, "Hello World, my name is aniket jain.", Gravity.CENTER, 0);
+//        Toasty.normal(this, "Hello World, My name is aniket.");
+        Toasty.custom(this, "Hello World", R.drawable.ic_launcher_background, "#ff9933", 300, 300);
     }
 }
