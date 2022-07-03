@@ -169,7 +169,15 @@ Toasty.custom(Context context, String message, int gravity, int duration, int dr
 ```
 Toasty.custom(context, "Custom Toast", Gravity.CENTER, Toast.LENGTH_SHORT, R.drawable.icon, "#ff3300", 19, "#f9f9f9", 200, 200);
 ```
+
+## Contributing
+
+Please fork this repository and contribute back. Any contributions, large or small, major or minor features, bug fixes, are welcomed and appreciated but will be thoroughly reviewed.
 ## Authors
 
 - [@aniketjain8441](https://github.com/aniketjain8441/)
+
+## Buy me a Coffee
+
+- [Aniket Jain](https://www.buymeacoffee.com/aniketjain/)
 
