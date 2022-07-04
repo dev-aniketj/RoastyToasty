@@ -21,7 +21,7 @@ Add this to your module's `build.gradle` file (make sure the version matches the
 
 ```bash
 dependencies {
-	        implementation 'com.github.aniketjain8441:RoastyToasty:1.0.1'
+	        implementation 'com.github.ExpertAniket:RoastyToasty:Tag'
 	}
 ```
 
