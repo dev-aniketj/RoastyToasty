@@ -21,7 +21,7 @@ Add this to your module's `build.gradle` file (make sure the version matches the
 
 ```bash
 dependencies {
-	        implementation 'com.github.ExpertAniket:RoastyToasty:Tag'
+	        implementation 'com.github.ExpertAniket:RoastyToasty:1.0.1'
 	}
 ```
 
@@ -178,7 +178,7 @@ Please fork this repository and contribute back. Any contributions, large or sma
 
 ## Authors
 
-- [@aniketjain8441](https://github.com/aniketjain8441/)
+- [@AniketJain](https://github.com/ExpertAniket/)
 
 ## Buy me a Coffee
 
