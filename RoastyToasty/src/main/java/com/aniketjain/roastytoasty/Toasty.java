@@ -1,5 +1,10 @@
 package com.aniketjain.roastytoasty;
 
+import static com.aniketjain.roastytoasty.ToastyColors.ERROR_COLOR;
+import static com.aniketjain.roastytoasty.ToastyColors.SUCCESS_COLOR;
+import static com.aniketjain.roastytoasty.ToastyColors.TEXT_COLOR;
+import static com.aniketjain.roastytoasty.ToastyColors.WARNING_COLOR;
+
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Color;
@@ -13,7 +18,8 @@ import android.widget.Toast;
 
 import androidx.cardview.widget.CardView;
 
-public class Toasty extends ToastyColors {
+
+public class Toasty {
     private static Toast toast;
     private static View view;
     private static CardView toastyCardView;
@@ -38,7 +44,7 @@ public class Toasty extends ToastyColors {
         toastyLinearLayout.setLayoutParams(params);
     }
 
-    private static void setUpTextView(int textSize, String textColor){
+    private static void setUpTextView(int textSize, String textColor) {
         toastyTextView.setTextSize(textSize);
         toastyTextView.setTextColor(Color.parseColor(textColor));
     }
@@ -61,15 +67,15 @@ public class Toasty extends ToastyColors {
     }
 
     public static void success(Context context, String message) {
-        custom(context, message, R.drawable.ic_baseline_done_24, ToastyColors.SUCCESS_COLOR, 17, TEXT_COLOR);
+        custom(context, message, R.drawable.ic_baseline_done_24, SUCCESS_COLOR, 17, TEXT_COLOR);
     }
 
     public static void error(Context context, String message) {
-        custom(context, message, R.drawable.ic_baseline_error_outline_24, ToastyColors.ERROR_COLOR, 17, TEXT_COLOR);
+        custom(context, message, R.drawable.ic_baseline_error_outline_24, ERROR_COLOR, 17, TEXT_COLOR);
     }
 
     public static void warning(Context context, String message) {
-        custom(context, message, R.drawable.ic_baseline_warning_24, ToastyColors.WARNING_COLOR, 17, TEXT_COLOR);
+        custom(context, message, R.drawable.ic_baseline_warning_24, WARNING_COLOR, 17, TEXT_COLOR);
     }
 
     //    DEFAULT (GRAVITY, DURATION, TEXT SIZE AND TEXT COLOR))
