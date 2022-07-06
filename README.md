@@ -1,9 +1,9 @@
 
 # RoastyToasty ❤️🔥
 
-[![platform](https://img.shields.io/badge/platform-Android-green.svg)](https://www.android.com)
+[![platform](https://img.shields.io/badge/platform-Android-brightgreen.svg?style=plastic)]
 [![API](https://img.shields.io/badge/API-16%2B-brightgreen.svg?style=plastic)](https://android-arsenal.com/api?level=16)
-[![1.0.1](https://jitpack.io/v/ExpertAniket/RoastyToasty.svg)](https://jitpack.io/#ExpertAniket/RoastyToasty)
+[![1.0.2](https://jitpack.io/v/ExpertAniket/RoastyToasty.svg?style=plastic)]
 
 
 ## Prerequisites
@@ -25,7 +25,7 @@ Add this to your module's `build.gradle` file (make sure the version matches the
 
 ```
 dependencies {
-	        implementation 'com.github.ExpertAniket:RoastyToasty:1.0.1'
+	        implementation 'com.github.ExpertAniket:RoastyToasty:1.0.2'
 	}
 ```
 
