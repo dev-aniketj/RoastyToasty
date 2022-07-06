@@ -11,13 +11,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.cardview.widget.CardView;
-
-
 public class Toasty extends ToastyColors {
     private static Toast toast;
     private static View view;
-    private static CardView toastyCardView;
     private static LinearLayout toastyLinearLayout;
     private static ImageView toastyImageView;
     private static TextView toastyTextView;
@@ -46,7 +42,6 @@ public class Toasty extends ToastyColors {
     }
 
     private static void findViews(View view) {
-        toastyCardView = view.findViewById(R.id.toasty_cardView);
         toastyLinearLayout = view.findViewById(R.id.toasty_LinearLayout);
         toastyImageView = view.findViewById(R.id.toasty_imageView);
         toastyTextView = view.findViewById(R.id.toasty_textView);

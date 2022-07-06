@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toasty.custom(this, "Hello World", R.drawable.ic_launcher_background, "#ff9933", 300, 300);
+        Toasty.normal(this, "Normal Toast");
+//        Toasty.custom(this, "Hello World", R.drawable.ic_launcher_background, "#ff9933", 300, 300);
     }
 }
