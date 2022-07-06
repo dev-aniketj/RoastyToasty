@@ -39,12 +39,12 @@ Toasty.success(context, "Success Toast");
 
 To display an error Toast:
 ```
-Toasty.success(context, "Error Toast");
+Toasty.error(context, "Error Toast");
 ```
 
 To display an warning Toast:
 ```
-Toasty.success(context, "Warning Toast");
+Toasty.warning(context, "Warning Toast");
 ```
 
 ## Custom Toast
