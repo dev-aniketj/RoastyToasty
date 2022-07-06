@@ -21,7 +21,7 @@ Add this to your module's `build.gradle` file (make sure the version matches the
 
 ```bash
 dependencies {
-	        implementation 'com.github.aniketjain8441:RoastyToasty:1.0.1'
+	        implementation 'com.github.ExpertAniket:RoastyToasty:1.0.1'
 	}
 ```
 
@@ -173,9 +173,12 @@ Toasty.custom(context, "Custom Toast", Gravity.CENTER, Toast.LENGTH_SHORT, R.dra
 ## Contributing
 
 Please fork this repository and contribute back. Any contributions, large or small, major or minor features, bug fixes, are welcomed and appreciated but will be thoroughly reviewed.
+#### Thank you.
+
+
 ## Authors
 
-- [@aniketjain8441](https://github.com/aniketjain8441/)
+- [@AniketJain](https://github.com/ExpertAniket/)
 
 ## Buy me a Coffee
 
