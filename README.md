@@ -174,8 +174,10 @@ Toasty.custom(context, "Custom Toast", Gravity.CENTER, Toast.LENGTH_SHORT, R.dra
 ## Screenshots
 
 <p float="left">
-	<img src="https://github.com/ExpertAniket/RoastyToasty/blob/master/Screenshots/success_SS.png" width="200" hspace="40"/>
-	<img src="https://github.com/ExpertAniket/RoastyToasty/blob/master/Screenshots/success_SS_2.png" width="200" hspace="40"/>
+	<img src="https://github.com/ExpertAniket/RoastyToasty/blob/master/Screenshots/success_SS.png" width="200"/>
+	<img src="https://github.com/ExpertAniket/RoastyToasty/blob/master/Screenshots/error_SS.png" width="200"/>
+	<img src="https://github.com/ExpertAniket/RoastyToasty/blob/master/Screenshots/warning_SS.png" width="200"/>
+	<img src="https://github.com/ExpertAniket/RoastyToasty/blob/master/Screenshots/custom_SS.png" width="200"/>
 </p>
 
 
