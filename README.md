@@ -170,6 +170,14 @@ Toasty.custom(Context context, String message, int gravity, int duration, int dr
 Toasty.custom(context, "Custom Toast", Gravity.CENTER, Toast.LENGTH_SHORT, R.drawable.icon, "#ff3300", 19, "#f9f9f9", 200, 200);
 ```
 
+
+## Screenshots
+
+<p float="left"> <img src="https://github.com/ExpertAniket/RoastyToasty/blob/master/Screenshots/success_SS.png" width="200" hspace="40"/>
+</p>
+
+
+
 ## Contributing
 
 Please fork this repository and contribute back. Any contributions, large or small, major or minor features, bug fixes, are welcomed and appreciated but will be thoroughly reviewed.
