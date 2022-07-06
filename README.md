@@ -1,12 +1,16 @@
 
 # RoastyToasty ❤️🔥
 
+[![platform](https://img.shields.io/badge/platform-Android-green.svg)](https://www.android.com)
+[![API](https://img.shields.io/badge/API-16%2B-brightgreen.svg?style=plastic)](https://android-arsenal.com/api?level=16)
+[![1.0.1](https://jitpack.io/v/ExpertAniket/RoastyToasty.svg)](https://jitpack.io/#ExpertAniket/RoastyToasty)
+
 
 ## Prerequisites
 
 Add this in your root `build.gradle` file (not your module `build.gradle` file):
 
-```bash
+```
 allprojects {
 		repositories {
 			...
@@ -19,7 +23,7 @@ allprojects {
 
 Add this to your module's `build.gradle` file (make sure the version matches the JitPack badge above):
 
-```bash
+```
 dependencies {
 	        implementation 'com.github.ExpertAniket:RoastyToasty:1.0.1'
 	}
@@ -39,12 +43,12 @@ Toasty.success(context, "Success Toast");
 
 To display an error Toast:
 ```
-Toasty.success(context, "Error Toast");
+Toasty.error(context, "Error Toast");
 ```
 
 To display an warning Toast:
 ```
-Toasty.success(context, "Warning Toast");
+Toasty.warning(context, "Warning Toast");
 ```
 
 ## Screenshots
