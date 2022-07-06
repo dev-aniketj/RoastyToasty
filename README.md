@@ -1,9 +1,9 @@
 
 # RoastyToasty ❤️🔥
 
-[![platform](https://img.shields.io/badge/platform-Android-brightgreen.svg?style=plastic)]
+[![platform](https://img.shields.io/badge/platform-Android-brightgreen.svg?style=plastic)](https://www.android.com)
 [![API](https://img.shields.io/badge/API-16%2B-brightgreen.svg?style=plastic)](https://android-arsenal.com/api?level=16)
-[![1.0.2](https://jitpack.io/v/ExpertAniket/RoastyToasty.svg?style=plastic)]
+[![1.0.2](https://jitpack.io/v/ExpertAniket/RoastyToasty.svg?style=plastic)](https://www.android.com)
 
 
 ## Prerequisites
@@ -54,6 +54,7 @@ Toasty.warning(context, "Warning Toast");
 ## Screenshots
 
 <p float="left">
+	<img src="https://github.com/ExpertAniket/RoastyToasty/blob/master/Screenshots/normal_SS.png" width="200"/>
 	<img src="https://github.com/ExpertAniket/RoastyToasty/blob/master/Screenshots/success_SS.png" width="200"/>
 	<img src="https://github.com/ExpertAniket/RoastyToasty/blob/master/Screenshots/error_SS.png" width="200"/>
 	<img src="https://github.com/ExpertAniket/RoastyToasty/blob/master/Screenshots/warning_SS.png" width="200"/>
