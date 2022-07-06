@@ -1,10 +1,5 @@
 package com.aniketjain.roastytoasty;
 
-import static com.aniketjain.roastytoasty.ToastyColors.ERROR_COLOR;
-import static com.aniketjain.roastytoasty.ToastyColors.SUCCESS_COLOR;
-import static com.aniketjain.roastytoasty.ToastyColors.TEXT_COLOR;
-import static com.aniketjain.roastytoasty.ToastyColors.WARNING_COLOR;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Color;
@@ -19,13 +14,14 @@ import android.widget.Toast;
 import androidx.cardview.widget.CardView;
 
 
-public class Toasty {
+public class Toasty extends ToastyColors {
     private static Toast toast;
     private static View view;
     private static CardView toastyCardView;
     private static LinearLayout toastyLinearLayout;
     private static ImageView toastyImageView;
     private static TextView toastyTextView;
+    private static ToastyColors colors;
 
     private static void createToast(Context context) {
         toast = new Toast(context);
@@ -67,15 +63,15 @@ public class Toasty {
     }
 
     public static void success(Context context, String message) {
-        custom(context, message, R.drawable.ic_baseline_done_24, SUCCESS_COLOR, 17, TEXT_COLOR);
+        custom(context, message, R.drawable.ic_baseline_done_24, colors.SUCCESS_COLOR, 17, colors.TEXT_COLOR);
     }
 
     public static void error(Context context, String message) {
-        custom(context, message, R.drawable.ic_baseline_error_outline_24, ERROR_COLOR, 17, TEXT_COLOR);
+        custom(context, message, R.drawable.ic_baseline_error_outline_24, colors.ERROR_COLOR, 17, colors.TEXT_COLOR);
     }
 
     public static void warning(Context context, String message) {
-        custom(context, message, R.drawable.ic_baseline_warning_24, WARNING_COLOR, 17, TEXT_COLOR);
+        custom(context, message, R.drawable.ic_baseline_warning_24, colors.WARNING_COLOR, 17, colors.TEXT_COLOR);
     }
 
     //    DEFAULT (GRAVITY, DURATION, TEXT SIZE AND TEXT COLOR))
