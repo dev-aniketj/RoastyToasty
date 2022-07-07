@@ -3,7 +3,7 @@
 
 [![platform](https://img.shields.io/badge/platform-Android-brightgreen.svg?style=flat)](https://www.android.com)
 [![API](https://img.shields.io/badge/API-16%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=16)
-[![1.0.2](https://jitpack.io/v/dev-aniketj/RoastyToasty.svg?style=flat)](https://www.android.com)
+[![1.0.2](https://jitpack.io/v/dev-aniketj/RoastyToasty.svg)](https://jitpack.io/#dev-aniketj/RoastyToasty)
 
 
 ## Prerequisites
