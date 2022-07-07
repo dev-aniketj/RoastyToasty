@@ -196,14 +196,14 @@ Please fork this repository and contribute back. Any contributions, large or sma
 
 ## Buy me a Coffee
 
-- [Aniket Jain](https://www.buymeacoffee.com/aniketjain/)
+- [Aniket Jain](https://www.buymeacoffee.com/dev-aniketj/)
 
 ## License
 
 * [Apache Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
 
 ```
-Copyright 2022 ExpertAniket
+Copyright 2022 dev-aniketj
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
