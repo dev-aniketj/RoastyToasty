@@ -5,6 +5,7 @@
 [![API](https://img.shields.io/badge/API-16%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=16)
 [![1.0.2](https://jitpack.io/v/dev-aniketj/RoastyToasty.svg)](https://jitpack.io/#dev-aniketj/RoastyToasty)
 
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/aniketjain)
 
 ## Prerequisites
 
@@ -188,15 +189,6 @@ Toasty.custom(context, "Custom Toast", Gravity.CENTER, Toast.LENGTH_SHORT, R.dra
 
 Please fork this repository and contribute back. Any contributions, large or small, major or minor features, bug fixes, are welcomed and appreciated but will be thoroughly reviewed.
 #### Thank you.
-
-
-## Authors
-
-- [@AniketJain](https://github.com/dev-aniketj/)
-
-## Buy me a Coffee
-
-- [Aniket Jain](https://www.buymeacoffee.com/aniketjain/)
 
 ## License
 
