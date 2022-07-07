@@ -3,7 +3,7 @@
 
 [![platform](https://img.shields.io/badge/platform-Android-brightgreen.svg?style=flat)](https://www.android.com)
 [![API](https://img.shields.io/badge/API-16%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=16)
-[![1.0.2](https://jitpack.io/v/ExpertAniket/RoastyToasty.svg?style=flat)](https://www.android.com)
+[![1.0.2](https://jitpack.io/v/dev-aniketj/RoastyToasty.svg?style=flat)](https://www.android.com)
 
 
 ## Prerequisites
@@ -25,7 +25,7 @@ Add this to your module's `build.gradle` file (make sure the version matches the
 
 ```
 dependencies {
-	        implementation 'com.github.ExpertAniket:RoastyToasty:1.0.2'
+	        implementation 'com.github.dev-aniketj:RoastyToasty:1.0.2'
 	}
 ```
 
