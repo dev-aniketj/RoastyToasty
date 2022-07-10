@@ -1,10 +1,11 @@
 
 # RoastyToasty ❤️🔥
 
-[![platform](https://img.shields.io/badge/platform-Android-green.svg)](https://www.android.com)
-[![API](https://img.shields.io/badge/API-16%2B-brightgreen.svg?style=plastic)](https://android-arsenal.com/api?level=16)
-[![1.0.1](https://jitpack.io/v/ExpertAniket/RoastyToasty.svg)](https://jitpack.io/#ExpertAniket/RoastyToasty)
+[![platform](https://img.shields.io/badge/platform-Android-brightgreen.svg?style=flat)](https://www.android.com)
+[![API](https://img.shields.io/badge/API-16%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=16)
+[![1.0.2](https://jitpack.io/v/dev-aniketj/RoastyToasty.svg)](https://jitpack.io/#dev-aniketj/RoastyToasty)
 
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/aniketjain)
 
 ## Prerequisites
 
@@ -25,7 +26,7 @@ Add this to your module's `build.gradle` file (make sure the version matches the
 
 ```
 dependencies {
-	        implementation 'com.github.ExpertAniket:RoastyToasty:1.0.1'
+	        implementation 'com.github.dev-aniketj:RoastyToasty:1.0.2'
 	}
 ```
 
@@ -54,10 +55,11 @@ Toasty.warning(context, "Warning Toast");
 ## Screenshots
 
 <p float="left">
-	<img src="https://github.com/ExpertAniket/RoastyToasty/blob/master/Screenshots/success_SS.png" width="200"/>
-	<img src="https://github.com/ExpertAniket/RoastyToasty/blob/master/Screenshots/error_SS.png" width="200"/>
-	<img src="https://github.com/ExpertAniket/RoastyToasty/blob/master/Screenshots/warning_SS.png" width="200"/>
-	<img src="https://github.com/ExpertAniket/RoastyToasty/blob/master/Screenshots/custom_SS.png" width="200"/>
+	<img src="https://github.com/dev-aniketj/RoastyToasty/blob/master/Screenshots/normal_SS.png" width="200"/>
+	<img src="https://github.com/dev-aniketj/RoastyToasty/blob/master/Screenshots/success_SS.png" width="200"/>
+	<img src="https://github.com/dev-aniketj/RoastyToasty/blob/master/Screenshots/error_SS.png" width="200"/>
+	<img src="https://github.com/dev-aniketj/RoastyToasty/blob/master/Screenshots/warning_SS.png" width="200"/>
+	<img src="https://github.com/dev-aniketj/RoastyToasty/blob/master/Screenshots/custom_SS.png" width="200"/>
 </p>
 
 ## Custom Toast 🔥❤️🔥
@@ -188,21 +190,12 @@ Toasty.custom(context, "Custom Toast", Gravity.CENTER, Toast.LENGTH_SHORT, R.dra
 Please fork this repository and contribute back. Any contributions, large or small, major or minor features, bug fixes, are welcomed and appreciated but will be thoroughly reviewed.
 #### Thank you.
 
-
-## Authors
-
-- [@AniketJain](https://github.com/ExpertAniket/)
-
-## Buy me a Coffee
-
-- [Aniket Jain](https://www.buymeacoffee.com/aniketjain/)
-
 ## License
 
 * [Apache Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
 
 ```
-Copyright 2022 ExpertAniket
+Copyright 2022 dev-aniketj
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
