@@ -13,9 +13,13 @@ import android.widget.Toast;
 
 public class Toasty extends ToastyColors {
     private static Toast toast;
+    @SuppressLint("StaticFieldLeak")
     private static View view;
+    @SuppressLint("StaticFieldLeak")
     private static LinearLayout toastyLinearLayout;
+    @SuppressLint("StaticFieldLeak")
     private static ImageView toastyImageView;
+    @SuppressLint("StaticFieldLeak")
     private static TextView toastyTextView;
     private static ToastyColors colors;
 
@@ -39,6 +43,12 @@ public class Toasty extends ToastyColors {
     private static void setUpTextView(int textSize, String textColor) {
         toastyTextView.setTextSize(textSize);
         toastyTextView.setTextColor(Color.parseColor(textColor));
+    }
+
+    private static void setUpToast(int duration) {
+        toast.setView(view);
+        toast.setDuration(duration);
+        toast.show();
     }
 
     private static void findViews(View view) {
@@ -77,9 +87,7 @@ public class Toasty extends ToastyColors {
         toastyImageView.setVisibility(View.GONE);
         toastyTextView.setText(message);
 
-        toast.setView(view);
-        toast.setDuration(Toast.LENGTH_SHORT);  //default
-        toast.show();
+        setUpToast(0);
     }
 
     public static void custom(Context context, String message, int textSize) {
@@ -90,9 +98,7 @@ public class Toasty extends ToastyColors {
         toastyTextView.setText(message);
         toastyTextView.setTextSize(textSize);
 
-        toast.setView(view);
-        toast.setDuration(Toast.LENGTH_SHORT);
-        toast.show();
+        setUpToast(0);
     }
 
     public static void custom(Context context, String message, int gravity, int duration) {
@@ -102,10 +108,8 @@ public class Toasty extends ToastyColors {
         toastyImageView.setVisibility(View.GONE);
         toastyTextView.setText(message);
 
-        toast.setView(view);
         toast.setGravity(gravity, 0, 0);
-        toast.setDuration(duration);
-        toast.show();
+        setUpToast(duration);
     }
 
     //    NORMAL (GRAVITY, DURATION)
@@ -115,9 +119,7 @@ public class Toasty extends ToastyColors {
 
         basicSetup(message, drawable, backgroundColor);
 
-        toast.setView(view);
-        toast.setDuration(Toast.LENGTH_SHORT);   //default
-        toast.show();
+        setUpToast(0);
     }
 
     public static void custom(Context context, String message, int duration, int drawable, String backgroundColor) {
@@ -126,9 +128,7 @@ public class Toasty extends ToastyColors {
 
         basicSetup(message, drawable, backgroundColor);
 
-        toast.setView(view);
-        toast.setDuration(duration);    //added
-        toast.show();
+        setUpToast(duration);
     }
 
     public static void custom(Context context, String message, int gravity, int duration, int drawable, String backgroundColor) {
@@ -137,10 +137,8 @@ public class Toasty extends ToastyColors {
 
         basicSetup(message, drawable, backgroundColor);
 
-        toast.setView(view);
         toast.setGravity(gravity, 0, 0);    //added
-        toast.setDuration(duration);
-        toast.show();
+        setUpToast(duration);
     }
 
     //    TEXT SIZE, TEXT COLOR (GRAVITY, DURATION)
@@ -153,9 +151,7 @@ public class Toasty extends ToastyColors {
         //added
         setUpTextView(textSize, textColor);
 
-        toast.setView(view);
-        toast.setDuration(Toast.LENGTH_SHORT);
-        toast.show();
+        setUpToast(0);
     }
 
     public static void custom(Context context, String message, int duration, int drawable, String backgroundColor, int textSize, String textColor) {
@@ -167,9 +163,7 @@ public class Toasty extends ToastyColors {
         //added
         setUpTextView(textSize, textColor);
 
-        toast.setView(view);
-        toast.setDuration(duration);
-        toast.show();
+        setUpToast(duration);
     }
 
     public static void custom(Context context, String message, int gravity, int duration, int drawable, String backgroundColor, int textSize, String textColor) {
@@ -181,10 +175,8 @@ public class Toasty extends ToastyColors {
         //added
         setUpTextView(textSize, textColor);
 
-        toast.setView(view);
         toast.setGravity(gravity, 0, 0);
-        toast.setDuration(duration);
-        toast.show();
+        setUpToast(duration);
     }
 
     //    WIDTH, HEIGHT (GRAVITY, DURATION, TEXT SIZE AND TEXT COLOR)
@@ -197,9 +189,7 @@ public class Toasty extends ToastyColors {
         //added
         setUpWidthHeight(toastyWidth, toastyHeight);
 
-        toast.setView(view);
-        toast.setDuration(Toast.LENGTH_SHORT);  //default
-        toast.show();
+        setUpToast(0);
     }
 
     public static void custom(Context context, String message, int gravity, int duration, int drawable, String backgroundColor, int toastyWidth, int toastyHeight) {
@@ -211,10 +201,8 @@ public class Toasty extends ToastyColors {
         //added
         setUpWidthHeight(toastyWidth, toastyHeight);
 
-        toast.setView(view);
         toast.setGravity(gravity, 0, 0);
-        toast.setDuration(duration);
-        toast.show();
+        setUpToast(duration);
     }
 
     public static void custom(Context context, String message, int drawable, String backgroundColor, int textSize, String textColor, int toastyWidth, int toastyHeight) {
@@ -228,9 +216,7 @@ public class Toasty extends ToastyColors {
         //added
         setUpWidthHeight(toastyWidth, toastyHeight);
 
-        toast.setView(view);
-        toast.setDuration(Toast.LENGTH_SHORT);  //default
-        toast.show();
+        setUpToast(0);
     }
 
     public static void custom(Context context, String message, int gravity, int duration, int drawable, String backgroundColor, int textSize, String textColor, int toastyWidth, int toastyHeight) {
@@ -244,9 +230,7 @@ public class Toasty extends ToastyColors {
         //added
         setUpWidthHeight(toastyWidth, toastyHeight);
 
-        toast.setView(view);
         toast.setGravity(gravity, 0, 0);
-        toast.setDuration(duration);
-        toast.show();
+        setUpToast(duration);
     }
 }
